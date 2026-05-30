@@ -1,55 +1,63 @@
 package PracticeProblem07;
 
-class Student {
+class Student{
+    
     private int id;
     private String name;
     private String program;
 
-    public Student(int id, String name, String program) {
+    public Student(int id, String name, String program){
+        
         this.id = id;
         this.name = name;
         this.program = program;
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public String getName() {
+    public String getName(){
         return name;
     }
+    
 }
 
-class Instructor {
+class Instructor{
+    
     private int id;
     private String name;
     private String department;
     private String title;
 
-    public Instructor(int id, String name, String department, String title) {
+    public Instructor(int id, String name, String department, String title){
+        
         this.id = id;
         this.name = name;
         this.department = department;
         this.title = title;
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public String getName() {
+    public String getName(){
         return name;
     }
+    
 }
 
-class Course {
+class Course{
+    
     private int id;
     private String syllabus;
     private String title;
     private int credits;
     private String prerequisite;
 
-    public Course(int id, String syllabus, String title, int credits, String prerequisite) {
+    public Course(int id, String syllabus, String title, int credits, String prerequisite){
+        
         this.id = id;
         this.syllabus = syllabus;
         this.title = title;
@@ -57,16 +65,18 @@ class Course {
         this.prerequisite = prerequisite;
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public String getTitle() {
+    public String getTitle(){
         return title;
     }
+    
 }
 
-class CourseOffering {
+class CourseOffering{
+    
     private Student student;
     private Instructor instructor;
     private Course course;
@@ -76,10 +86,8 @@ class CourseOffering {
     private int year;
     private String semester;
 
-    public CourseOffering(Student student, Instructor instructor,
-                          Course course, String time,
-                          int sectionNo, int roomId,
-                          int year, String semester) {
+    public CourseOffering(Student student, Instructor instructor,Course course, String time,int sectionNo, int roomId,int year, String semester){
+        
         this.student = student;
         this.instructor = instructor;
         this.course = course;
@@ -90,7 +98,8 @@ class CourseOffering {
         this.semester = semester;
     }
 
-    public void displayInfo() {
+    public void displayInfo(){
+        
         System.out.println("Student: " + student.getName());
         System.out.println("Instructor: " + instructor.getName());
         System.out.println("Course: " + course.getTitle());
@@ -100,6 +109,7 @@ class CourseOffering {
         System.out.println("Year: " + year);
         System.out.println("Semester: " + semester);
     }
+    
 }
 
 public class Prac {
